@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+    overflow: hidden; /* Prevent scrollbars */
+    background-color: #222; /* Dark background, can be changed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensure body takes full height */
+}
+
+#game-container {
+    /* You might want to fix the size or make it responsive */
+    width: 800px; /* Example width */
+    height: 600px; /* Example height */
+    background-color: #000; /* Fallback background for the canvas area */
+    position: relative; /* Needed if you add UI elements over the canvas */
+}
+
+canvas {
+    display: block; /* Remove extra space below canvas */
+    width: 100%;   /* Make canvas fill the container */
+    height: 100%;
+}
